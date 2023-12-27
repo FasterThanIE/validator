@@ -4,7 +4,7 @@ namespace App\Constraints;
 
 use App\Policies\RulePolicy;
 
-class EmailRule implements RulePolicy
+class EmailRuleConstraint implements RulePolicy
 {
     public static function validate(mixed $value): bool
     {
