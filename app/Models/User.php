@@ -2,13 +2,13 @@
 
 namespace App\Models;
 
-use App\Constraints\EmailRuleConstraint;
+use App\Constraints\EmailConstraint;
 use App\Constraints\ValidAgeConstraint;
 
 class User
 {
     protected $fields = [
-        'email' => [EmailRuleConstraint::class],
+        'email' => [EmailConstraint::class],
         'age' => [ValidAgeConstraint::class]
     ];
 
