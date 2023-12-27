@@ -1,0 +1,10 @@
+{
+    "name": "fasterthanie/validator",
+    "description": "Test project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {}
+}
