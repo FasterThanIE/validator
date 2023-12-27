@@ -4,5 +4,6 @@ namespace App\Policies;
 
 interface RulePolicy
 {
-    public function validate(string $field, mixed $value): bool;
+    public static function validate(mixed $value): bool;
+    public static function failedValidationMessage(): string;
 }

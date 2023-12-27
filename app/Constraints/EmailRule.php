@@ -6,8 +6,13 @@ use App\Policies\RulePolicy;
 
 class EmailRule implements RulePolicy
 {
-    public function validate(string $field, mixed $value): bool
+    public static function validate(mixed $value): bool
     {
         return filter_var($value, FILTER_VALIDATE_EMAIL);
+    }
+
+    public static function failedValidationMessage(): string
+    {
+        return "Email is not valid";
     }
 }
