@@ -12,5 +12,5 @@ function dd($var) {
 //var_dump($_ENV); exit();
 
 $user = new \App\Models\User();
-$user->email = "toma@gmail.com";
-$user->age = 12;
+$user->email = "toma@gmail.rs";
+$user->age = 21;

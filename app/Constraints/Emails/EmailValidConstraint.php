@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Constraints;
+namespace App\Constraints\Emails;
 
 use App\Policies\RulePolicy;
 
-class EmailConstraint implements RulePolicy
+class EmailValidConstraint implements RulePolicy
 {
     public static function validate(mixed $value): bool
     {
